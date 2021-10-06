@@ -3,10 +3,12 @@ package edu.cnm.deepdive.animals.model;
 import androidx.annotation.NonNull;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import java.util.LinkedList;
+import java.util.List;
+import org.jetbrains.annotations.NotNull;
 
 public class Animal {
 
-    @Expose
     private String id;
 
     @Expose
@@ -18,10 +20,6 @@ public class Animal {
     @Expose
     @SerializedName("href")
     private String imageUrl;
-
-    public Animal() {
-        super();
-    }
 
     public String getTitle() {
         return title;
